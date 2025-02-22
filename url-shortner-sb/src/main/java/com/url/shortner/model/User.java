@@ -2,8 +2,6 @@ package com.url.shortner.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Data
@@ -18,22 +16,22 @@ public class User {
     private String password;
     private String role = "ROLE_USER";
 
-//    public String getEmailId() {
-//        return emailId;
-//    }
-//    public Long getId() {
-//        return id;
-//    }
-//
-//    public String getUserName() {
-//        return userName;
-//    }
-//
-//    public String getPassword() {
-//        return password;
-//    }
-//
-//    public String getRole() {
-//        return role;
-//    }
+    public String getEmailId() {
+        return emailId;
+    }
+    public Long getId() {
+        return id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getRole() {
+        return role;
+    }
 }
